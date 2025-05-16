@@ -8,6 +8,7 @@ Este proyecto visualiza la evolución del estilo en la alfombra roja a lo largo 
 - Fotografías y descripciones de vestuario:  
   - [Vogue Met Gala Archive](https://www.vogue.com/tag/event/met-gala)
   - Wikipedia: listas de invitados y diseñadores en eventos como el Met Gala, Oscar, etc.
+  - Pinterest y Blogs online sobre estos eventos
   - Bases de datos o scraping simple de color en imágenes (a acotar a 5-10 años si es necesario).
 
 ## Posibles visualizaciones
