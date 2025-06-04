@@ -8,9 +8,7 @@
     "Color 3": "#C0C0C0",
     "Color 4": "#2F4F4F",
     "Color 5": "",
-    "Notas": "Paleta oscura y rebelde con muchos tonos metálicos.",
-    "": "",
-    "__1": ""
+    "Notas": "Paleta oscura y rebelde con muchos tonos metálicos."
   },
   {
     "Año": 2014,
@@ -20,9 +18,7 @@
     "Color 3": "#FFD700",
     "Color 4": "#50C878",
     "Color 5": "",
-    "Notas": "Elegancia clásica con blancos y negros dominantes.",
-    "": "",
-    "__1": ""
+    "Notas": "Elegancia clásica con blancos y negros dominantes."
   },
   {
     "Año": 2015,
@@ -32,9 +28,7 @@
     "Color 3": "#FFFFFF",
     "Color 4": "#000000",
     "Color 5": "#C0C0C0",
-    "Notas": "Influencia china con mucho rojo y dorado.",
-    "": "",
-    "__1": ""
+    "Notas": "Influencia china con mucho rojo y dorado."
   },
   {
     "Año": 2016,
@@ -44,9 +38,7 @@
     "Color 3": "#000000",
     "Color 4": "#F5DEB3",
     "Color 5": "",
-    "Notas": "Dominio de tonos metálicos por la estética tecnológica.",
-    "": "",
-    "__1": ""
+    "Notas": "Dominio de tonos metálicos por la estética tecnológica."
   },
   {
     "Año": 2017,
@@ -56,9 +48,7 @@
     "Color 3": "#000000",
     "Color 4": "#FFFFFF",
     "Color 5": "",
-    "Notas": "Paleta audaz con predominancia del rojo y negro.",
-    "": "",
-    "__1": ""
+    "Notas": "Paleta audaz con predominancia del rojo y negro."
   },
   {
     "Año": 2018,
@@ -68,9 +58,7 @@
     "Color 3": "#000000",
     "Color 4": "#FFFFFF",
     "Color 5": "",
-    "Notas": "Simbolismo religioso y opulencia en dorado y blanco.",
-    "": "",
-    "__1": ""
+    "Notas": "Simbolismo religioso y opulencia en dorado y blanco."
   },
   {
     "Año": 2019,
@@ -80,9 +68,7 @@
     "Color 3": "#39FF14",
     "Color 4": "#C0C0C0",
     "Color 5": "#FFD700",
-    "Notas": "Exageración cromática típica del 'Camp'.",
-    "": "",
-    "__1": ""
+    "Notas": "Exageración cromática típica del 'Camp'."
   },
   {
     "Año": 2021,
@@ -92,9 +78,7 @@
     "Color 3": "#000000",
     "Color 4": "#0000FF",
     "Color 5": "#8B4513",
-    "Notas": "Colores patrióticos reflejando moda americana.",
-    "": "",
-    "__1": ""
+    "Notas": "Colores patrióticos reflejando moda americana."
   },
   {
     "Año": 2022,
@@ -104,9 +88,7 @@
     "Color 3": "#FFFFFF",
     "Color 4": "#FFFDD0",
     "Color 5": "#000000",
-    "Notas": "Inspiración en la opulencia de la era dorada.",
-    "": "",
-    "__1": ""
+    "Notas": "Inspiración en la opulencia de la era dorada."
   },
   {
     "Año": 2023,
@@ -116,9 +98,7 @@
     "Color 3": "#000000",
     "Color 4": "#FFD700",
     "Color 5": "",
-    "Notas": "Estética Lagerfeld, blanco y negro muy presente.",
-    "": "",
-    "__1": ""
+    "Notas": "Estética Lagerfeld, blanco y negro muy presente."
   }
 ],
   "disruptivo": [
@@ -462,5 +442,6 @@
     "Motivo": "Una interpretación poética y visualmente impactante del tema"
   }
 ]
+
 
 
