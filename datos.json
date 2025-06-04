@@ -1,25 +1,25 @@
 {
   "color": [
-  {
-    "Año": 2013,
-    "Tema": "PUNK: Chaos to Couture",
-    "Color 1": "#000000",
-    "Color 2": "#FF0000",
-    "Color 3": "#C0C0C0",
-    "Color 4": "#2F4F4F",
-    "Color 5": "",
-    "Notas": "Paleta oscura y rebelde con muchos tonos metálicos."
-  },
-  {
-    "Año": 2014,
-    "Tema": "Charles James: Beyond Fashion",
-    "Color 1": "#FFFFFF",
-    "Color 2": "#000000",
-    "Color 3": "#FFD700",
-    "Color 4": "#50C878",
-    "Color 5": "",
-    "Notas": "Elegancia clásica con blancos y negros dominantes."
-  },
+    {
+      "Año": 2013,
+      "Tema": "PUNK: Chaos to Couture",
+      "Color 1": "#000000",
+      "Color 2": "#FF0000",
+      "Color 3": "#C0C0C0",
+      "Color 4": "#2F4F4F",
+      "Color 5": "",
+      "Notas": "Paleta oscura y rebelde con muchos tonos metálicos."
+    },
+    {
+      "Año": 2014,
+      "Tema": "Charles James: Beyond Fashion",
+      "Color 1": "#FFFFFF",
+      "Color 2": "#000000",
+      "Color 3": "#FFD700",
+      "Color 4": "#50C878",
+      "Color 5": "",
+      "Notas": "Elegancia clásica con blancos y negros dominantes."
+    },
   {
     "Año": 2015,
     "Tema": "China: Through the Looking Glass",
