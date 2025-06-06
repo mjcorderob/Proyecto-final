@@ -25,7 +25,7 @@ Relevar patrones estéticos, rupturas temáticas y transformaciones visuales en 
 ## Antecedentes y referentes
 
 ### 1. Reuters – Snow White Reimagined  
-![Snow White Reimagined](./images/snow_white_reimagined.jpg)  
+![Snow White Reimagined](./images/snow_white_reimagined.png)  
 **Descripción:** Visualización con enfoque narrativo que reinterpreta la historia de Blancanieves a través de imágenes y datos, con scroll interactivo y orden cronológico.  
 **Fuente:** [Reuters Snow White Reimagined](https://www.reuters.com/snow-white-reimagined)  
 **Aspectos positivos:**  
@@ -39,7 +39,7 @@ Relevar patrones estéticos, rupturas temáticas y transformaciones visuales en 
 ---
 
 ### 2. Reuters – Met Gala Fashion Timeline  
-![Met Gala Fashion Timeline](./images/met_gala_fashion_timeline.jpg)  
+![Met Gala Fashion Timeline](./images/met_gala_fashion_timeline.png)  
 **Descripción:** Línea de tiempo visual con los looks más destacados de la Met Gala, con navegación interactiva para explorar cada edición.  
 **Fuente:** [Reuters Met Gala Fashion Timeline](https://www.reuters.com/met-gala-fashion-timeline)  
 **Aspectos positivos:**  
@@ -53,7 +53,7 @@ Relevar patrones estéticos, rupturas temáticas y transformaciones visuales en 
 ---
 
 ### 3. The Pudding – How Music Taste Evolved  
-![How Music Taste Evolved](./images/how_music_taste_evolved.jpg)  
+![How Music Taste Evolved](./images/how_music_taste_evolved.png)  
 **Descripción:** Visualización dinámica que muestra la evolución del gusto musical con líneas de tiempo y contexto cultural.  
 **Fuente:** [The Pudding – How Music Taste Evolved](https://pudding.cool/2020/05/music-taste-evolution/)  
 **Aspectos positivos:**  
