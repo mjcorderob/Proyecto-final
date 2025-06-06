@@ -1,55 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Estética Met Gala</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estética Met Gala (2013–2023)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>Estética Met Gala (2013–2023)</h1>
+    <p>La Met Gala es uno de los eventos de moda más importantes del mundo, donde celebridades, diseñadores y artistas se reúnen para explorar temas visuales a través de sus atuendos. En esta página se analizan distintos aspectos estéticos del evento a lo largo de los últimos diez años.</p>
+    <p>Las siguientes visualizaciones exploran datos sobre:</p>
+    <ul>
+      <li>Línea de tiempo con los looks más icónicos</li>
+      <li>Colores predominantes por año</li>
+      <li>Diseñadores que más celebridades han vestido</li>
+      <li>Comparación entre looks disruptivos y clásicos</li>
+    </ul>
+  </header>
 
-  <h1>Estética Met Gala (2013–2023)</h1>
+  <main>
+    <section>
+      <h2>Línea de tiempo: Looks icónicos</h2>
+      <p>Se muestran los atuendos más representativos de cada año, incluyendo a las celebridades, diseñadores y temas que marcaron tendencia en la Met Gala.</p>
+      <div class="timeline"></div>
+    </section>
 
-  <p>
-    La Met Gala es uno de los eventos de moda más importantes del mundo, donde celebridades, diseñadores y artistas se reúnen para explorar temas visuales a través de sus atuendos. En esta página se analizan distintos aspectos estéticos del evento a lo largo de los últimos diez años.
-  </p>
+    <section>
+      <h2>Nube de colores por año + mosaico general</h2>
+      <p>Visualización de los colores más utilizados por los asistentes cada año, extraídos a partir de imágenes de los looks más representativos.</p>
+      <div class="color-by-year"></div>
+      <div class="color-grid">
+        <div class="pixel" style="background-color: #000000;"></div>
+        <div class="pixel" style="background-color: #FF0000;"></div>
+        <div class="pixel" style="background-color: #C0C0C0;"></div>
+        <div class="pixel" style="background-color: #2F4F4F;"></div>
+        <div class="pixel" style="background-color: #FFFFFF;"></div>
+        <div class="pixel" style="background-color: #FFD700;"></div>
+        <div class="pixel" style="background-color: #50C878;"></div>
+        <div class="pixel" style="background-color: #C8102E;"></div>
+        <div class="pixel" style="background-color: #F5DEB3;"></div>
+        <div class="pixel" style="background-color: #E6E6FA;"></div>
+        <div class="pixel" style="background-color: #800080;"></div>
+        <div class="pixel" style="background-color: #FFC0CB;"></div>
+        <div class="pixel" style="background-color: #FF69B4;"></div>
+        <div class="pixel" style="background-color: #39FF14;"></div>
+        <div class="pixel" style="background-color: #0000FF;"></div>
+        <div class="pixel" style="background-color: #8B4513;"></div>
+        <div class="pixel" style="background-color: #FFFF00;"></div>
+        <div class="pixel" style="background-color: #FFFDD0;"></div>
+      </div>
+    </section>
 
-  <p>
-    Las siguientes visualizaciones exploran datos sobre:
-  </p>
+    <section>
+      <h2>Looks disruptivos vs clásicos</h2>
+      <div class="versus-container"></div>
+    </section>
 
-  <ul>
-    <li>Línea de tiempo con los looks más icónicos</li>
-    <li>Colores predominantes por año</li>
-    <li>Diseñadores que más celebridades han vestido</li>
-    <li>Comparación entre looks disruptivos y clásicos</li>
-  </ul>
+    <section>
+      <h2>Ranking de Diseñadores más destacados</h2>
+      <table class="designer-ranking">
+        <thead>
+          <tr>
+            <th>Puesto</th>
+            <th>Diseñador</th>
+            <th>Recuento de apariciones</th>
+            <th>Celebrities (ejemplos)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
 
-  <h2>Línea de tiempo: Looks más icónicos</h2>
+  <footer>
+    <p>María José Cordero · 2025</p>
+  </footer>
 
-  <p>
-    Se muestran los atuendos más representativos de cada año, incluyendo a las celebridades, diseñadores y temas que marcaron tendencia en la Met Gala.
-  </p>
+  <script>
+    async function datosMet() {
+      const consulta = await fetch("https://raw.githubusercontent.com/mjcorderob/Proyecto-final/refs/heads/main/datos.json");
+      const data = await consulta.json();
+      lineaTiempo(data.Linea);
+      coloresPorAño(data.color);
+      rankingDisenadores(data.ranking);
+      looksVersus(data.disruptivo);
+    }
 
+    function lineaTiempo(lista) {
+      const contenedor = document.querySelector(".timeline");
+      contenedor.innerHTML = "";
+      lista.forEach(item => {
+        const div = document.createElement("div");
+        div.classList.add("timeline-event");
+        const imgNombre = `${item.Personaje.replace(/\s+/g, '')}${item.Año}.png`;
+        div.innerHTML = `
+          <img src="${imgNombre}" alt="${item.Personaje} ${item.Año}">
+          <p>${item.Año} – ${item.Personaje}</p>
+        `;
+        contenedor.appendChild(div);
+      });
+    }
 
-  <h2>Colores predominantes</h2>
+    function coloresPorAño(lista) {
+      const contenedor = document.querySelector(".color-by-year");
+      contenedor.innerHTML = "";
+      lista.forEach(dato => {
+        const fila = document.createElement("div");
+        fila.classList.add("year-row");
+        fila.innerHTML = `<span>${dato.Año}</span>`;
+        for (let i = 1; i <= 5; i++) {
+          const color = dato[`Color ${i}`];
+          if (color) {
+            const punto = document.createElement("div");
+            punto.classList.add("color-dot");
+            punto.style.backgroundColor = color;
+            fila.appendChild(punto);
+          }
+        }
+        contenedor.appendChild(fila);
+      });
+    }
 
-  <p>
-    Visualización de los colores más utilizados por los asistentes cada año, extraídos a partir de imágenes de los looks más representativos.
-  </p>
+    function rankingDisenadores(lista) {
+      const cuerpo = document.querySelector(".designer-ranking tbody");
+      cuerpo.innerHTML = "";
+      lista.forEach(d => {
+        const icono = d.Puesto === 1 ? "🥇" : d.Puesto === 2 ? "🥈" : d.Puesto === 3 ? "🥉" : d.Puesto;
+        cuerpo.innerHTML += `
+          <tr>
+            <td>${icono}</td>
+            <td>${d.Diseñador}</td>
+            <td>${d["Recuento de apariciones"]}</td>
+            <td>${d["Celebridades (ejemplos)"]}</td>
+          </tr>
+        `;
+      });
+    }
 
+    function looksVersus(lista) {
+      const contenedor = document.querySelector(".versus-container");
+      contenedor.innerHTML = "";
+      const añoActual = 2023;
+      const disruptivo = lista.find(d => d["Disruptivo o no"] === 1 && d.Año === añoActual);
+      const clasico = lista.find(d => d["Disruptivo o no"] === 0 && d.Año === añoActual);
+      [disruptivo, clasico].forEach(d => {
+        const div = document.createElement("div");
+        div.classList.add("versus-look");
+        const tipo = d["Disruptivo o no"] === 1 ? "Disruptivo" : "Clásico";
+        const img = `${d.Personaje.replace(/\s+/g, '')}${d.Año}.png`;
+        div.innerHTML = `
+          <h3>${tipo}</h3>
+          <img src="${img}" alt="${d.Personaje}">
+          <p>${d.Personaje} ${d.Año}: ${d["Argumento del por qué es disruptivo/no"]}</p>
+        `;
+        contenedor.appendChild(div);
+      });
+    }
 
-  <h2>Ranking de diseñadores</h2>
-
-  <p>
-    Esta sección muestra qué diseñadores han vestido a más celebridades entre 2013 y 2023, reflejando su relevancia en el evento.
-  </p>
-
-
-  <h2>Looks disruptivos vs clásicos</h2>
-
-  <p>
-    Clasificación de looks según su nivel de disrupción, contrastando propuestas atrevidas o conceptuales con otras más sobrias o tradicionales.
-  </p>
-
-
+    datosMet().catch(error => console.error("Error al cargar datos Met Gala:", error));
+  </script>
 </body>
 </html>
