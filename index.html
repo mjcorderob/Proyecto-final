@@ -27,10 +27,12 @@
   </div>
       <div class="timeline"></div>
     </section>
-    
+
     <section>
+       <div class="Nube-text">
       <h2>Nube de colores por año + mosaico general</h2>
       <p>Visualización de los colores más utilizados por los asistentes cada año, extraídos a partir de imágenes de los looks más representativos.</p>
+       </div>
       <div class="color-by-year"></div>
       <div class="color-grid">
         <div class="pixel" style="background-color: #000000;"></div>
@@ -90,19 +92,30 @@
     }
 
     function lineaTiempo(lista) {
-      const contenedor = document.querySelector(".timeline");
-      contenedor.innerHTML = "";
-      lista.forEach(item => {
-        const div = document.createElement("div");
-        div.classList.add("timeline-event");
-        const imgNombre = `images/${item.Personaje.replace(/\s+/g, '')}${item.Año}.png`;
-        div.innerHTML = `
-          <img src="${imgNombre}" alt="${item.Personaje} ${item.Año}">
-          <p>${item.Año} – ${item.Personaje}</p>
-        `;
-        contenedor.appendChild(div);
-      });
-    }
+  const contenedor = document.querySelector(".timeline");
+  contenedor.innerHTML = "";
+
+  lista.forEach((item, index) => {
+    const div = document.createElement("div");
+    div.classList.add("timeline-event");
+
+    const offset = `${Math.floor(Math.random() * 100)}px`;
+    div.style.marginTop = offset;
+    const scale = 1 + Math.random() * 0.3;
+  div.style.transform = `scale(${scale})`;
+
+    const imgNombre = `images/${item.Personaje.replace(/\s+/g, '')}${item.Ano}.png`;
+
+    div.innerHTML = `
+      <span class="year-label">${item.Ano}</span>
+      <img src="${imgNombre}" alt="${item.Personaje} ${item.Ano}">
+      <p>${item.Personaje}</p>
+    `;
+
+    contenedor.appendChild(div);
+  });
+}
+
 
     function coloresPorAño(lista) {
       const contenedor = document.querySelector(".color-by-year");
@@ -110,7 +123,7 @@
       lista.forEach(dato => {
         const fila = document.createElement("div");
         fila.classList.add("year-row");
-        fila.innerHTML = `<span>${dato.Año}</span>`;
+        fila.innerHTML = `<span>${dato.Ano}</span>`;
         for (let i = 1; i <= 5; i++) {
           const color = dato[`Color ${i}`];
           if (color) {
@@ -132,7 +145,7 @@
         cuerpo.innerHTML += `
           <tr>
             <td>${icono}</td>
-            <td>${d.Diseñador}</td>
+            <td>${d.Disenador}</td>
             <td>${d["Recuento de apariciones"]}</td>
             <td>${d["Celebridades (ejemplos)"]}</td>
           </tr>
@@ -143,18 +156,18 @@
     function looksVersus(lista) {
       const contenedor = document.querySelector(".versus-container");
       contenedor.innerHTML = "";
-      const añoActual = 2023;
-      const disruptivo = lista.find(d => d["Disruptivo o no"] === 1 && d.Año === añoActual);
-      const clasico = lista.find(d => d["Disruptivo o no"] === 0 && d.Año === añoActual);
+      const anoActual = 2023;
+      const disruptivo = lista.find(d => d["Disruptivo o no"] === 1 && d.Ano === anoActual);
+      const clasico = lista.find(d => d["Disruptivo o no"] === 0 && d.Ano === anoActual);
       [disruptivo, clasico].forEach(d => {
         const div = document.createElement("div");
         div.classList.add("versus-look");
         const tipo = d["Disruptivo o no"] === 1 ? "Disruptivo" : "Clásico";
-        const img = `images/${d.Personaje.replace(/\s+/g, '')}${d.Año}.png`;
+        const img = `images/${d.Personaje.replace(/\s+/g, '')}${d.Ano}.png`;
         div.innerHTML = `
           <h3>${tipo}</h3>
           <img src="${img}" alt="${d.Personaje}">
-          <p>${d.Personaje} ${d.Año}: ${d["Argumento del por qué es disruptivo/no"]}</p>
+          <p>${d.Personaje} ${d.Ano}: ${d["Argumento"]}</p>
         `;
         contenedor.appendChild(div);
       });
