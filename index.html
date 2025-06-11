@@ -96,7 +96,7 @@
         div.classList.add("timeline-event");
         const imgNombre = `${item.Personaje.replace(/\s+/g, '')}${item.Año}.png`;
         div.innerHTML = `
-          <img src="${imgNombre}" alt="${item.Personaje} ${item.Año}">
+          <img src=images/"${imgNombre}" alt="${item.Personaje} ${item.Año}">
           <p>${item.Año} – ${item.Personaje}</p>
         `;
         contenedor.appendChild(div);
