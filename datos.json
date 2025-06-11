@@ -345,16 +345,16 @@
         },
         {
             "Ano": 2010,
-            "Personaje": "Blake Lively",
+            "Personaje": "Marion Cotillard",
             "Tema": "American Woman",
             "Look": "Vestido drapeado con bordados en tonos dorados",
             "Motivo": "Refinado y glamuroso"
         },
         {
             "Ano": 2011,
-            "Personaje": "Rihanna",
+            "Personaje": "Daphne Guinness",
             "Tema": "Alexander McQueen: Savage Beauty",
-            "Look": "Vestido blanco con cola dramática",
+            "Look": "Vestido blanco con plumas",
             "Motivo": "Elegancia pura con dramatismo"
         },
         {
@@ -366,7 +366,7 @@
         },
         {
             "Ano": 2014,
-            "Personaje": "Beyoncé",
+            "Personaje": "Erykah Badu",
             "Tema": "Charles James: Beyond Fashion",
             "Look": "Labios violetas y delineado de ojos dramático",
             "Motivo": "Un enfoque vanguardista que destacó en la alfombra roja"
@@ -380,21 +380,28 @@
         },
         {
             "Ano": 2015,
-            "Personaje": "Dakota Johnson",
+            "Personaje": "Solange",
             "Tema": "China: Through the Looking Glass",
             "Look": "Corte de cabello bob hasta la barbilla",
             "Motivo": "Transformación significativa que marcó tendencia"
         },
         {
             "Año": 2016,
-            "Personaje": "Claire Danes",
+            "Personaje": "Gigi Hadid",
+            "Tema": "Manus x Machina: Fashion in an Age of Technology",
+            "Look": "Vestido azul claro con luces LED integradas",
+            "Motivo": "Perfecta fusión entre tecnología y cuento de hadas"
+        },
+        {
+            "Año": 2016,
+            "Personaje": "Lupita Nyong'o",
             "Tema": "Manus x Machina: Fashion in an Age of Technology",
             "Look": "Vestido azul claro con luces LED integradas",
             "Motivo": "Perfecta fusión entre tecnología y cuento de hadas"
         },
         {
             "Ano": 2018,
-            "Personaje": "Cardi B",
+            "Personaje": "Rihanna",
             "Tema": "Heavenly Bodies: Fashion and the Catholic Imagination",
             "Look": "Vestido de tul rojo con silueta estructurada",
             "Motivo": "Inspirado en la Virgen María"
@@ -429,7 +436,7 @@
         },
         {
             "Ano": 2023,
-            "Personaje": "Michaela Coel",
+            "Personaje": "Cara Delevigne",
             "Tema": "Karl Lagerfeld: A Line of Beauty",
             "Look": "Maquillaje dorado y peinado estructurado",
             "Motivo": "Una representación moderna del legado de Lagerfeld"
