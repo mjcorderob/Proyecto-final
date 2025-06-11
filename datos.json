@@ -329,9 +329,16 @@
             "Look": "Estilo rococó con peluca y corsé",
             "Motivo": "Una recreación teatral y precisa del estilo del siglo XVIII"
         },
-        {
-            "Ano": 2006,
+        
+            "Ano": 2005,
             "Personaje": "Karolina Kurkova",
+            "Tema": "Anglomania",
+            "Look": "Vestido con estructura arquitectónica dorada",
+            "Motivo": "Dramático y escultórico"
+        },
+         {
+            "Ano": 2006,
+            "Personaje": "Charlize Theron",
             "Tema": "Anglomania",
             "Look": "Vestido con estructura arquitectónica dorada",
             "Motivo": "Dramático y escultórico"
