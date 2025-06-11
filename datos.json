@@ -1,7 +1,7 @@
 {
     "color": [
         {
-            "Año": 2013,
+            "Ano": 2013,
             "Tema": "PUNK: Chaos to Couture",
             "Color 1": "#000000",
             "Color 2": "#FF0000",
@@ -11,7 +11,7 @@
             "Notas": "Paleta oscura y rebelde con muchos tonos metálicos."
         },
         {
-            "Año": 2014,
+            "Ano": 2014,
             "Tema": "Charles James: Beyond Fashion",
             "Color 1": "#FFFFFF",
             "Color 2": "#000000",
@@ -21,7 +21,7 @@
             "Notas": "Elegancia clásica con blancos y negros dominantes."
         },
         {
-            "Año": 2015,
+            "Ano": 2015,
             "Tema": "China: Through the Looking Glass",
             "Color 1": "#C8102E",
             "Color 2": "#FFD700",
@@ -31,7 +31,7 @@
             "Notas": "Influencia china con mucho rojo y dorado."
         },
         {
-            "Año": 2016,
+            "Ano": 2016,
             "Tema": "Manus x Machina: Fashion in an Age of Technology",
             "Color 1": "#C0C0C0",
             "Color 2": "#FFFFFF",
@@ -41,7 +41,7 @@
             "Notas": "Dominio de tonos metálicos por la estética tecnológica."
         },
         {
-            "Año": 2017,
+            "Ano": 2017,
             "Tema": "Rei Kawakubo/Comme des Garçons: Art of the In-Between",
             "Color 1": "#FF0000",
             "Color 2": "#E6E6FA",
@@ -51,7 +51,7 @@
             "Notas": "Paleta audaz con predominancia del rojo y negro."
         },
         {
-            "Año": 2018,
+            "Ano": 2018,
             "Tema": "Heavenly Bodies: Fashion and the Catholic Imagination",
             "Color 1": "#FFD700",
             "Color 2": "#800080",
@@ -61,7 +61,7 @@
             "Notas": "Simbolismo religioso y opulencia en dorado y blanco."
         },
         {
-            "Año": 2019,
+            "Ano": 2019,
             "Tema": "Camp: Notes on Fashion",
             "Color 1": "#FFC0CB",
             "Color 2": "#FF69B4",
@@ -71,7 +71,7 @@
             "Notas": "Exageración cromática típica del 'Camp'."
         },
         {
-            "Año": 2021,
+            "Ano": 2021,
             "Tema": "In America: A Lexicon of Fashion",
             "Color 1": "#FF0000",
             "Color 2": "#FFFFFF",
@@ -81,7 +81,7 @@
             "Notas": "Colores patrióticos reflejando moda americana."
         },
         {
-            "Año": 2022,
+            "Ano": 2022,
             "Tema": "In America: An Anthology of Fashion",
             "Color 1": "#FFD700",
             "Color 2": "#FFFF00",
@@ -91,7 +91,7 @@
             "Notas": "Inspiración en la opulencia de la era dorada."
         },
         {
-            "Año": 2023,
+            "Ano": 2023,
             "Tema": "Karl Lagerfeld: A Line of Beauty",
             "Color 1": "#E6E6FA",
             "Color 2": "#FFFFFF",
@@ -103,276 +103,276 @@
     ],
     "disruptivo": [
         {
-            "Año": 2013,
+            "Ano": 2013,
             "Personaje": "Beyoncé",
             "Disruptivo o no": 0,
-            "Argumento del por qué es disruptivo/no": "Su look era una elegancia clásica, con un vestido de Givenchy que resaltaba su figura y un toque sofisticado",
-            "Diseñador": "Givenchy"
+            "Argumento": "Su look era una elegancia clásica, con un vestido de Givenchy que resaltaba su figura y un toque sofisticado",
+            "Disenador": "Givenchy"
         },
         {
-            "Año": 2013,
+            "Ano": 2013,
             "Personaje": "Madonna",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Se presentó con un look de corset negro, muy cargado y provocador, desafiando las expectativas tradicionales",
-            "Diseñador": "Givenchy"
+            "Argumento": "Se presentó con un look de corset negro, muy cargado y provocador, desafiando las expectativas tradicionales",
+            "Disenador": "Givenchy"
         },
         {
-            "Año": 2015,
+            "Ano": 2015,
             "Personaje": "Rihanna",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Impactó con su vestido amarillo de Guo Pei, completamente fuera de lo convencional, estilo futurista con detalles ornamentales",
-            "Diseñador": "Guo Pei"
+            "Argumento": "Impactó con su vestido amarillo de Guo Pei, completamente fuera de lo convencional, estilo futurista con detalles ornamentales",
+            "Disenador": "Guo Pei"
         },
         {
-            "Año": 2016,
+            "Ano": 2016,
             "Personaje": "Lady Gaga",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Presentó un vestido con extravagantes detalles de plata, junto con un maquillaje radical, estilo avant-garde",
-            "Diseñador": "Marc Jacobs"
+            "Argumento": "Presentó un vestido con extravagantes detalles de plata, junto con un maquillaje radical, estilo avant-garde",
+            "Disenador": "Marc Jacobs"
         },
         {
-            "Año": 2017,
+            "Ano": 2017,
             "Personaje": "Rihanna",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Este look fue uno de los más disruptivos, con un vestido de Comme des Garçons, completamente abstracto y experimental",
-            "Diseñador": "Comme des Garçons"
+            "Argumento": "Este look fue uno de los más disruptivos, con un vestido de Comme des Garçons, completamente abstracto y experimental",
+            "Disenador": "Comme des Garçons"
         },
         {
-            "Año": 2018,
+            "Ano": 2018,
             "Personaje": "Cardi B",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Con un vestido de Thom Browne de aspecto teatral, se alejó de lo tradicional, destacando por su volumen y detalle",
-            "Diseñador": "Thom Browne"
+            "Argumento": "Con un vestido de Thom Browne de aspecto teatral, se alejó de lo tradicional, destacando por su volumen y detalle",
+            "Disenador": "Thom Browne"
         },
         {
-            "Año": 2018,
+            "Ano": 2018,
             "Personaje": "Zendaya",
             "Disruptivo o no": 0,
-            "Argumento del por qué es disruptivo/no": "Optó por un look más elegante y cómodo, con un vestido con reminiscencias de un estilo retro, clásico y minimalista",
-            "Diseñador": "Versace"
+            "Argumento": "Optó por un look más elegante y cómodo, con un vestido con reminiscencias de un estilo retro, clásico y minimalista",
+            "Disenador": "Versace"
         },
         {
-            "Año": 2019,
+            "Ano": 2019,
             "Personaje": "Billie Eilish",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Este look rompió con lo establecido, con un vestido gigante de Oscar de la Renta que evocaba una estética gótica moderna",
-            "Diseñador": "Oscar de la Renta"
+            "Argumento": "Este look rompió con lo establecido, con un vestido gigante de Oscar de la Renta que evocaba una estética gótica moderna",
+            "Disenador": "Oscar de la Renta"
         },
         {
-            "Año": 2021,
+            "Ano": 2021,
             "Personaje": "Billie Eilish",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Un vestido voluminoso de Gucci con un toque nostálgico de la moda vintage pero completamente diferente en el contexto de la Gala",
-            "Diseñador": "Gucci"
+            "Argumento": "Un vestido voluminoso de Gucci con un toque nostálgico de la moda vintage pero completamente diferente en el contexto de la Gala",
+            "Disenador": "Gucci"
         },
         {
-            "Año": 2021,
+            "Ano": 2021,
             "Personaje": "Kim Kardashian",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "El look completamente negro, cubriéndole el rostro, hizo una declaración radical de anonimato, desafiando el concepto de celebridad",
-            "Diseñador": "Versace"
+            "Argumento": "El look completamente negro, cubriéndole el rostro, hizo una declaración radical de anonimato, desafiando el concepto de celebridad",
+            "Disenador": "Versace"
         },
         {
-            "Año": 2021,
+            "Ano": 2021,
             "Personaje": "Emma Stone",
             "Disruptivo o no": 0,
-            "Argumento del por qué es disruptivo/no": "Su look fue elegante y sobrio, con un vestido clásico de Louis Vuitton, dentro de los parámetros tradicionales",
-            "Diseñador": "Louis Vuitton"
+            "Argumento": "Su look fue elegante y sobrio, con un vestido clásico de Louis Vuitton, dentro de los parámetros tradicionales",
+            "Disenador": "Louis Vuitton"
         },
         {
-            "Año": 2022,
+            "Ano": 2022,
             "Personaje": "Kendall Jenner",
             "Disruptivo o no": 0,
-            "Argumento del por qué es disruptivo/no": "Optó por un look minimalista y clásico con un vestido de Prada que evoca elegancia atemporal",
-            "Diseñador": "Prada"
+            "Argumento": "Optó por un look minimalista y clásico con un vestido de Prada que evoca elegancia atemporal",
+            "Disenador": "Prada"
         },
         {
-            "Año": 2022,
+            "Ano": 2022,
             "Personaje": "Doja Cat",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Se presentó como un gato, con un look de Balenciaga totalmente radical, cubriendo todo su cuerpo en una estética de vanguardia",
-            "Diseñador": "Balenciaga"
+            "Argumento": "Se presentó como un gato, con un look de Balenciaga totalmente radical, cubriendo todo su cuerpo en una estética de vanguardia",
+            "Disenador": "Balenciaga"
         },
         {
-            "Año": 2023,
+            "Ano": 2023,
             "Personaje": "Anne Hathaway",
             "Disruptivo o no": 0,
-            "Argumento del por qué es disruptivo/no": "Optó por un look sobrio, sencillo y elegante, con un vestido de Versace que era clásico y con detalles sencillos",
-            "Diseñador": "Versace"
+            "Argumentoo": "Optó por un look sobrio, sencillo y elegante, con un vestido de Versace que era clásico y con detalles sencillos",
+            "Disenador": "Versace"
         },
         {
-            "Año": 2023,
+            "Ano": 2023,
             "Personaje": "Doja Cat",
             "Disruptivo o no": 1,
-            "Argumento del por qué es disruptivo/no": "Se presentó como una figura completamente transformada, con un look de Balenciaga que incluyó detalles disruptivos y un toque de humor",
-            "Diseñador": "Balenciaga"
+            "Argumento": "Se presentó como una figura completamente transformada, con un look de Balenciaga que incluyó detalles disruptivos y un toque de humor",
+            "Disenador": "Balenciaga"
         },
         {
-            "Año": 2023,
+            "Ano": 2023,
             "Personaje": "Zendaya",
             "Disruptivo o no": 0,
-            "Argumento del por qué es disruptivo/no": "Este look fue elegante y clásico, destacando por su estilo y colores delicados de Valentino",
-            "Diseñador": "Valentino"
+            "Argumento": "Este look fue elegante y clásico, destacando por su estilo y colores delicados de Valentino",
+            "Disenador": "Valentino"
         }
     ],
     "ranking": [
         {
             "Puesto": 1,
-            "Diseñador": "Versace",
+            "Disenador": "Versace",
             "Recuento de apariciones": 5,
             "Celebridades (ejemplos)": "Blake Lively (2017, 2022), Zendaya (2018), Anne Hathaway (2023), Gigi Hadid"
         },
         {
             "Puesto": 2,
-            "Diseñador": "Givenchy",
+            "Disenador": "Givenchy",
             "Recuento de apariciones": 3,
             "Celebridades (ejemplos)": "Beyoncé (2013, 2014, 2015), Madonna (2013)"
         },
         {
             "Puesto": 3,
-            "Diseñador": "Oscar de la Renta",
+            "Disenador": "Oscar de la Renta",
             "Recuento de apariciones": 3,
             "Celebridades (ejemplos)": "Billie Eilish (2021), Celine Dion (2019), Doja Cat (2023)"
         },
         {
             "Puesto": 4,
-            "Diseñador": "Balenciaga",
+            "Disenador": "Balenciaga",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Kim Kardashian (2021)"
         },
         {
             "Puesto": 5,
-            "Diseñador": "Guo Pei",
+            "Disenador": "Guo Pei",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Rihanna (2015)"
         },
         {
             "Puesto": 6,
-            "Diseñador": "Thom Browne",
+            "Disenador": "Thom Browne",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Cardi B (2018)"
         },
         {
             "Puesto": 7,
-            "Diseñador": "Maison Margiela",
+            "Disenador": "Maison Margiela",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Rihanna (2018)"
         },
         {
             "Puesto": 8,
-            "Diseñador": "Prada",
+            "Disenador": "Prada",
             "Recuento de apariciones": 2,
             "Celebridades (ejemplos)": "Katy Perry (2016), Kendall Jenner (2022)"
         },
         {
             "Puesto": 9,
-            "Diseñador": "Zac Posen",
+            "Disenador": "Zac Posen",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Claire Danes (2016)"
         },
         {
             "Puesto": 10,
-            "Diseñador": "The Blonds",
+            "Disenador": "The Blonds",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Billy Porter (2019)"
         },
         {
             "Puesto": 11,
-            "Diseñador": "Burberry",
+            "Disenador": "Burberry",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Bad Bunny (2022)"
         },
         {
             "Puesto": 12,
-            "Diseñador": "Roberto Cavalli",
+            "Disenador": "Roberto Cavalli",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Kim Kardashian (2015)"
         },
         {
             "Puesto": 13,
-            "Diseñador": "Stella McCartney",
+            "Disenador": "Stella McCartney",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Rihanna (2014)"
         },
         {
             "Puesto": 14,
-            "Diseñador": "Comme des Garçons",
+            "Disenador": "Comme des Garçons",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Rihanna (2017)"
         },
         {
             "Puesto": 15,
-            "Diseñador": "Harris Reed",
+            "Disenador": "Harris Reed",
             "Recuento de apariciones": 1,
             "Celebridades (ejemplos)": "Iman (2021)"
         }
     ],
     "Linea": [
         {
-            "Año": 1985,
+            "Ano": 1985,
             "Personaje": "Cher",
             "Tema": "Costumes of Royal India",
             "Look": "Sombra de ojos lavanda y peinado voluminoso",
             "Motivo": "Un estilo que definió la era y sigue siendo referencia en belleza"
         },
         {
-            "Año": 1999,
+            "Ano": 1999,
             "Personaje": "Gisele Bündchen",
             "Tema": "Rock Style",
             "Look": "Bronceado luminoso y maquillaje natural",
             "Motivo": "Representó la estética de finales de los 90 con un enfoque en la belleza natural"
         },
         {
-            "Año": 2004,
+            "Ano": 2004,
             "Personaje": "Amber Valletta",
             "Tema": "Dangerous Liaisons",
             "Look": "Estilo rococó con peluca y corsé",
             "Motivo": "Una recreación teatral y precisa del estilo del siglo XVIII"
         },
         {
-            "Año": 2006,
+            "Ano": 2006,
             "Personaje": "Karolina Kurkova",
             "Tema": "Anglomania",
             "Look": "Vestido con estructura arquitectónica dorada",
             "Motivo": "Dramático y escultórico"
         },
         {
-            "Año": 2010,
+            "Ano": 2010,
             "Personaje": "Blake Lively",
             "Tema": "American Woman",
             "Look": "Vestido drapeado con bordados en tonos dorados",
             "Motivo": "Refinado y glamuroso"
         },
         {
-            "Año": 2011,
+            "Ano": 2011,
             "Personaje": "Rihanna",
             "Tema": "Alexander McQueen: Savage Beauty",
             "Look": "Vestido blanco con cola dramática",
             "Motivo": "Elegancia pura con dramatismo"
         },
         {
-            "Año": 2012,
+            "Ano": 2012,
             "Personaje": "Beyoncé",
             "Tema": "Schiaparelli and Prada: Impossible Conversations",
             "Look": "Vestido transparente con pedrería negra",
             "Motivo": "Sensual y arriesgado"
         },
         {
-            "Año": 2014,
+            "Ano": 2014,
             "Personaje": "Beyoncé",
             "Tema": "Charles James: Beyond Fashion",
             "Look": "Labios violetas y delineado de ojos dramático",
             "Motivo": "Un enfoque vanguardista que destacó en la alfombra roja"
         },
         {
-            "Año": 2015,
+            "Ano": 2015,
             "Personaje": "Rihanna",
             "Tema": "China: Through the Looking Glass",
             "Look": "Tocado dorado y maquillaje que complementaba su capa amarilla",
             "Motivo": "Un look que se convirtió en uno de los más memorables de la Met Gala"
         },
         {
-            "Año": 2015,
+            "Ano": 2015,
             "Personaje": "Dakota Johnson",
             "Tema": "China: Through the Looking Glass",
             "Look": "Corte de cabello bob hasta la barbilla",
@@ -386,56 +386,56 @@
             "Motivo": "Perfecta fusión entre tecnología y cuento de hadas"
         },
         {
-            "Año": 2018,
+            "Ano": 2018,
             "Personaje": "Cardi B",
             "Tema": "Heavenly Bodies: Fashion and the Catholic Imagination",
             "Look": "Vestido de tul rojo con silueta estructurada",
             "Motivo": "Inspirado en la Virgen María"
         },
         {
-            "Año": 2019,
+            "Ano": 2019,
             "Personaje": "Lady Gaga",
             "Tema": "Camp: Notes on Fashion",
             "Look": "Pestañas extralargas y peluca rubia platino",
             "Motivo": "Una interpretación teatral que capturó la esencia del tema"
         },
         {
-            "Año": 2021,
+            "Ano": 2021,
             "Personaje": "Iman",
             "Tema": "In America: A Lexicon of Fashion",
             "Look": "Vestido dorado con tocado celestial",
             "Motivo": "Representación dorada de una diosa"
         },
         {
-            "Año": 2022,
+            "Ano": 2022,
             "Personaje": "Billie Eilish",
             "Tema": "In America: An Anthology of Fashion",
             "Look": "Estilo inspirado en la era victoriana con maquillaje suave",
             "Motivo": "Un homenaje a la moda histórica estadounidense"
         },
         {
-            "Año": 2022,
+            "Ano": 2022,
             "Personaje": "Blake Lively",
             "Tema": "In America: An Anthology of Fashion",
             "Look": "Vestido doble con transformación de colores",
             "Motivo": "Homenaje a la arquitectura de Nueva York"
         },
         {
-            "Año": 2023,
+            "Ano": 2023,
             "Personaje": "Michaela Coel",
             "Tema": "Karl Lagerfeld: A Line of Beauty",
             "Look": "Maquillaje dorado y peinado estructurado",
             "Motivo": "Una representación moderna del legado de Lagerfeld"
         },
         {
-            "Año": 2023,
+            "Ano": 2023,
             "Personaje": "Doja Cat",
             "Tema": "Karl Lagerfeld: A Line of Beauty",
             "Look": "Look felino con orejas",
             "Motivo": "joyas y prótesis de gato"
         },
         {
-            "Año": 2024,
+            "Ano": 2024,
             "Personaje": "Zendaya",
             "Tema": "The Garden of Time",
             "Look": "Maquillaje etéreo con detalles florales",
