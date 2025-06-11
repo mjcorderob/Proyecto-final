@@ -12,21 +12,22 @@
     <h1>Estética Met Gala (2013–2023)</h1>
     <p>La Met Gala es uno de los eventos de moda más importantes del mundo, donde celebridades, diseñadores y artistas se reúnen para explorar temas visuales a través de sus atuendos. En esta página se analizan distintos aspectos estéticos del evento a lo largo de los últimos diez años.</p>
     <p>Las siguientes visualizaciones exploran datos sobre:</p>
-    <ul>
-      <li>Línea de tiempo con los looks más icónicos</li>
-      <li>Colores predominantes por año</li>
-      <li>Diseñadores que más celebridades han vestido</li>
-      <li>Comparación entre looks disruptivos y clásicos</li>
-    </ul>
+    <p>Línea de tiempo con los looks más icónicos</p>
+    <p>Colores predominantes por año</p>
+    <p>Diseñadores que más celebridades han vestido</p>
+    <p>Comparación entre looks disruptivos y clásicos</p>
+   
   </header>
 
   <main>
     <section>
-      <h2>Línea de tiempo: Looks icónicos</h2>
-      <p>Se muestran los atuendos más representativos de cada año, incluyendo a las celebridades, diseñadores y temas que marcaron tendencia en la Met Gala.</p>
+      <div class="timeline-text">
+    <h2>Línea de tiempo: Looks icónicos</h2>
+    <p>Desde siluetas clásicas hasta disfraces dramáticos, esta línea de tiempo destaca los looks más memorables de la Met Gala entre 2013 y 2023.</p>
+  </div>
       <div class="timeline"></div>
     </section>
-
+    
     <section>
       <h2>Nube de colores por año + mosaico general</h2>
       <p>Visualización de los colores más utilizados por los asistentes cada año, extraídos a partir de imágenes de los looks más representativos.</p>
@@ -149,7 +150,7 @@
         const div = document.createElement("div");
         div.classList.add("versus-look");
         const tipo = d["Disruptivo o no"] === 1 ? "Disruptivo" : "Clásico";
-        const img = `${d.Personaje.replace(/\s+/g, '')}${d.Año}.png`;
+        const img = `images/${d.Personaje.replace(/\s+/g, '')}${d.Año}.png`;
         div.innerHTML = `
           <h3>${tipo}</h3>
           <img src="${img}" alt="${d.Personaje}">
