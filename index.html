@@ -8,18 +8,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Estética Met Gala (2013–2023)</h1>
+  <header id="main-header">
+    <h1 class="fade-in">Estética Met Gala (2013–2023)</h1>
+    <div class="titulo-text fade-in-delay">
     <p>La Met Gala es uno de los eventos de moda más importantes del mundo, donde celebridades, diseñadores y artistas se reúnen para explorar temas visuales a través de sus atuendos. En esta página se analizan distintos aspectos estéticos del evento a lo largo de los últimos diez años.</p>
-    <p>Las siguientes visualizaciones exploran datos sobre:</p>
-    <p>Línea de tiempo con los looks más icónicos</p>
-    <p>Colores predominantes por año</p>
-    <p>Diseñadores que más celebridades han vestido</p>
-    <p>Comparación entre looks disruptivos y clásicos</p>
-   
+    <p>Las siguientes visualizaciones exploran datos sobre los looks más icónicos a lo largo de los años, los colores más utilizados, el ranking de los mejores diseñadores y cómo algunos looks pueden ser más disruptivos que otros.</p>
+   </div>
+   <a href="#main-content" class="scroll-down">▼</a>
   </header>
 
-  <main>
+  <main id="main-content">
     <section>
       <div class="timeline-text">
     <h2>Línea de tiempo: Looks icónicos</h2>
@@ -57,7 +55,9 @@
     </section>
 
     <section>
+      <div class="versus-text">
       <h2>Looks disruptivos vs clásicos</h2>
+      </div>
       <div class="versus-container"></div>
     </section>
 
@@ -92,29 +92,29 @@
     }
 
     function lineaTiempo(lista) {
-  const contenedor = document.querySelector(".timeline");
-  contenedor.innerHTML = "";
+    const contenedor = document.querySelector(".timeline");
+    contenedor.innerHTML = "";
 
-  lista.forEach((item, index) => {
-    const div = document.createElement("div");
-    div.classList.add("timeline-event");
+    lista.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.classList.add("timeline-event");
 
-    const offset = `${Math.floor(Math.random() * 100)}px`;
-    div.style.marginTop = offset;
-    const scale = 1 + Math.random() * 0.3;
-  div.style.transform = `scale(${scale})`;
+      const offset = `${Math.floor(Math.random() * 100)}px`;
+      div.style.marginTop = offset;
+      const scale = 1 + Math.random() * 0.3;
+    div.style.transform = `scale(${scale})`;
 
-    const imgNombre = `images/${item.Personaje.replace(/\s+/g, '')}${item.Ano}.png`;
+      const imgNombre = `images/${item.Personaje.replace(/\s+/g, '')}${item.Ano}.png`;
 
-    div.innerHTML = `
-      <span class="year-label">${item.Ano}</span>
-      <img src="${imgNombre}" alt="${item.Personaje} ${item.Ano}">
-      <p>${item.Personaje}</p>
-    `;
+      div.innerHTML = `
+        <span class="year-label">${item.Ano}</span>
+        <img src="${imgNombre}" alt="${item.Personaje} ${item.Ano}">
+        <p>${item.Personaje}</p>
+      `;
 
-    contenedor.appendChild(div);
-  });
-}
+      contenedor.appendChild(div);
+    });
+  }
 
 
     function coloresPorAño(lista) {
@@ -175,5 +175,16 @@
 
     datosMet().catch(error => console.error("Error al cargar datos Met Gala:", error));
   </script>
+  <script>
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('main-header');
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>
