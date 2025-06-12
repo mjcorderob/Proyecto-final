@@ -1,16 +1,35 @@
+   .scroll-down {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      animation: bounce 1.8s infinite;
+      z-index: 2;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-10px); }
+    }
+
+   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
    body {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: "Raleway", sans-serif;
       background-color: #ffff;
       color: #333;
       margin: 0;
-      text-align: center;
-      margin-right: 
+      text-align: left; 
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
       text-align: center;
-      font-size: clamp(3rem, 6vw, 5rem);
+      font-size: clamp(5rem, 8vw, 7rem);
       line-height: 1.1;
       margin-bottom: 2rem;
     }
@@ -20,25 +39,139 @@
     text-align: center;
     }
 
+    .titulo-text {
+      font-family: "Raleway", sans-serif;
+      color: #333;
+      margin: 0;
+      text-align: left; 
+      padding: 10vh 18vw;
+      font-size: 1.2rem;
+    }
+
     header, main, footer {
       padding: 4vh 8vw;
       max-width: 1200px;
       margin: 0 auto;
     }
 
+    #main-header {
+      position: relative;
+      background-image: url('images/fondogala.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6vh 8vw;
+      overflow: hidden;
+      transition: color 0.5s ease;
+    }
+
+    #main-header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+      transition: background-color 0.5s ease;
+    }
+
+
+    #main-header.scrolled {
+      color: #0000; 
+    }
+
+    #main-header.scrolled::before {
+      background-color: rgba(255, 255, 255, 0.4); /* overlay claro al hacer scroll */
+    }
     section {
       border-top: 1px solid #ccc;
       margin-top: 4rem;
       padding-top: 2rem;
     }
+    header {
+      position: relative;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-image: url('images/fondogala.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6vh 8vw;
+      overflow: hidden;
+    }
 
-    /* Línea de tiempo estilo Reuters */
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4); 
+      z-index: 0;
+    }
+
+    header h1,
+    header .titulo-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: clamp(5rem, 8vw, 7rem);
+      line-height: 1.1;
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+
+    .fade-in-delay {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1.2s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    .titulo-text {
+      font-family: "Raleway", sans-serif;
+      color: #f3f3f3;
+      margin: 0 auto;
+      text-align: left;
+      max-width: 600px;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+    }
+
+
+    /* Línea de tiempo */
     .timeline {
       display: flex;
       gap: 5rem;
       overflow-x: auto;
       align-items: flex-start; 
       padding: 5rem 0;
+
     }
     .timeline-section {
       display: flex;
@@ -50,10 +183,12 @@
     }
 
     .timeline-text {
-      max-width: 35ch;
+      max-width: 50ch;
       text-align: left;
       margin-bottom: 2rem;
       align-self: flex-end;
+      padding: 10vh 18vw;
+
 
     }
 
@@ -62,6 +197,7 @@
       line-height: 1.1;
       margin-bottom: 1rem;
       text-align: left;
+
     }
 
     .timeline-text p {
@@ -133,12 +269,16 @@
       text-align: left;
       margin-bottom: 3rem;
       align-self: flex-end;
+      padding: 10vh 18vw;
+}
+    
     }
     .color-by-year {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2rem;
+    padding: 10vh 18vw;
     }
 
     .year-row {
@@ -154,8 +294,8 @@
     }
 
     .color-dot {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #ccc;
     }
@@ -175,11 +315,26 @@
     }
 
     /* Versus looks */
+    .versus-text {
+      max-width: 50ch;
+      text-align: left;
+      margin-bottom: 3rem;
+      align-self: flex-end;
+      padding: 10vh 18vw; 
+    }
+    .versus-text h2 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      text-align: left;
+
+    }
     .versus-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       margin-top: 2rem;
+
     }
 
     .versus-look {
@@ -204,35 +359,41 @@
     }
 
     /* Estilos para la tabla de ranking de diseñadores */
-.designer-ranking {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 2rem;
-}
+    .designer-ranking {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
 
-.designer-ranking th, .designer-ranking td {
-  padding: 12px 15px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
+    .designer-ranking th, .designer-ranking td {
+      padding: 12px 15px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
 
-.designer-ranking th {
-  background-color: #f1f1f1;
-  font-weight: bold;
-}
+    .designer-ranking th {
+      background-color: #f1f1f1;
+      font-weight: bold;
+    }
 
-.designer-ranking tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
+    .designer-ranking tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
 
-.designer-ranking tr:hover {
-  background-color: #f1f1f1;
-}
+    .designer-ranking tr:hover {
+      background-color: #f1f1f1;
+    }
 
-.designer-ranking td {
-  font-size: 0.9rem;
-}
+    .designer-ranking td {
+      font-size: 0.9rem;
+    }
 
-.designer-ranking td:last-child {
-  word-wrap: break-word;
-}
+    .designer-ranking td:last-child {
+      word-wrap: break-word;
+    }
+
+    #titulo-principal.scrolled {
+      color: #0000; 
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s ease;
+    }
