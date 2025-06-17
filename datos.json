@@ -152,19 +152,13 @@
             "Disenador": "Versace"
         },
         {
-            "Ano": 2019,
+            "Ano": 2021,
             "Personaje": "Billie Eilish",
             "Disruptivo o no": 1,
             "Argumento": "Este look rompió con lo establecido, con un vestido gigante de Oscar de la Renta que evocaba una estética gótica moderna",
             "Disenador": "Oscar de la Renta"
         },
-        {
-            "Ano": 2021,
-            "Personaje": "Billie Eilish",
-            "Disruptivo o no": 1,
-            "Argumento": "Un vestido voluminoso de Gucci con un toque nostálgico de la moda vintage pero completamente diferente en el contexto de la Gala",
-            "Disenador": "Gucci"
-        },
+        
         {
             "Ano": 2021,
             "Personaje": "Kim Kardashian",
@@ -178,6 +172,13 @@
             "Disruptivo o no": 0,
             "Argumento": "Su look fue elegante y sobrio, con un vestido clásico de Louis Vuitton, dentro de los parámetros tradicionales",
             "Disenador": "Louis Vuitton"
+        },
+        {
+            "Ano": 2022,
+            "Personaje": "Billie Eilish",
+            "Disruptivo o no": 1,
+            "Argumento": "Un vestido voluminoso de Gucci con un toque nostálgico de la moda vintage pero completamente diferente en el contexto de la Gala",
+            "Disenador": "Gucci"
         },
         {
             "Ano": 2022,
