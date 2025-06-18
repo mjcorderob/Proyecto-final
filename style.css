@@ -232,11 +232,11 @@
 
     .timeline-event p {
       margin-top: 0.5rem;
-      font-size: 0.85rem;
+      font-size: 1rem;
       font-family: 'Playfair Display', serif; 
       font-weight: lighter;
-      color: #1A1A1A;          
-      letter-spacing: 0.5px;
+      color: #111;        
+      letter-spacing: 1px;
       font-weight: 600;
     }
 
@@ -255,7 +255,7 @@
       z-index: -1;
     }
 
-
+    
 
     /* Nube de colores */
     .Nube-text h2 {
@@ -315,19 +315,27 @@
     }
 
     /* Versus looks */
-    .versus-text {
-      max-width: 50ch;
-      text-align: left;
-      margin-bottom: 3rem;
-      align-self: flex-end;
-      padding: 10vh 18vw; 
+    .versus-section {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 5rem 0;
+      background: white;
     }
-    .versus-text h2 {
-      font-size: clamp(2rem, 5vw, 4rem);
-      line-height: 1.1;
-      margin-bottom: 1rem;
-      text-align: left;
 
+    .versus-text p {
+      font-size: 2rem;
+      margin: 1;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .versus-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 10vw, 10rem);
+      margin: 0;
+      line-height: 0.9;
+      letter-spacing: -2px;
+}
     }
     .versus-container {
       display: grid;
@@ -357,6 +365,55 @@
       margin-top: 4rem;
       color: #888;
     }
+    .versus-evolution {
+      padding: 6rem 8vw;
+      background: #fff;
+    }
+
+    .versus-evolution h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    .evolution-block {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 5rem;
+      align-items: center;
+    }
+
+    .evolution-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .evolution-block img {
+      width: 50%;
+      max-width: 600px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .caption {
+      max-width: 40%;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .caption h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .caption p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
 
     /* Estilos para la tabla de ranking de diseñadores */
     .designer-ranking {

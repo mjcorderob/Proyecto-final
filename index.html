@@ -54,11 +54,16 @@
       </div>
     </section>
 
+    <section class="versus-section">
+    <div class="versus-text">
+      <p>Looks</p>
+      <h1>Disruptivos</h1>
+      <p>vs</p>
+      <h1>Clásicos</h1>
+    </div>
+  </section>
     <section>
-      <div class="versus-text">
-      <h2>Looks disruptivos vs clásicos</h2>
-      </div>
-      <div class="versus-container"></div>
+      <div class="versus-dinamico"></div>
     </section>
 
     <section>
@@ -154,24 +159,52 @@
     }
 
     function looksVersus(lista) {
-      const contenedor = document.querySelector(".versus-container");
+      const contenedor = document.querySelector(".versus-dinamico");
       contenedor.innerHTML = "";
-      const anoActual = 2023;
-      const disruptivo = lista.find(d => d["Disruptivo o no"] === 1 && d.Ano === anoActual);
-      const clasico = lista.find(d => d["Disruptivo o no"] === 0 && d.Ano === anoActual);
-      [disruptivo, clasico].forEach(d => {
-        const div = document.createElement("div");
-        div.classList.add("versus-look");
-        const tipo = d["Disruptivo o no"] === 1 ? "Disruptivo" : "Clásico";
-        const img = `images/${d.Personaje.replace(/\s+/g, '')}${d.Ano}.png`;
-        div.innerHTML = `
-          <h3>${tipo}</h3>
-          <img src="${img}" alt="${d.Personaje}">
-          <p>${d.Personaje} ${d.Ano}: ${d["Argumento"]}</p>
-        `;
-        contenedor.appendChild(div);
+
+      const añosUnicos = [...new Set(lista.map(item => item.Ano))].sort();
+
+      añosUnicos.forEach((año, index) => {
+        const disruptivo = lista.find(item => item.Ano === año && item["Disruptivo o no"] === 1);
+        const clasico = lista.find(item => item.Ano === año && item["Disruptivo o no"] === 0);
+
+        if (disruptivo) {
+          const div = document.createElement("div");
+          div.classList.add("evolution-block");
+          if (index % 2 === 1) div.classList.add("reverse");
+
+          const imagen = `images/versus/${disruptivo.Personaje.replace(/\s+/g, '')}${disruptivo.Ano}.jpg`;
+
+          div.innerHTML = `
+            <img src="${imagen}" alt="${disruptivo.Personaje}">
+            <div class="caption">
+              <h3>Disruptivo: ${disruptivo.Personaje} (${disruptivo.Ano})</h3>
+              <p>${disruptivo.Argumento}</p>
+            </div>
+          `;
+          contenedor.appendChild(div);
+        }
+
+        if (clasico) {
+          const div = document.createElement("div");
+          div.classList.add("evolution-block");
+          if (index % 2 === 0) div.classList.add("reverse");
+
+          const imagen = `images/versus/${clasico.Personaje.replace(/\s+/g, '')}${clasico.Ano}.jpg`;
+
+          div.innerHTML = `
+            <img src="${imagen}" alt="${clasico.Personaje}">
+            <div class="caption">
+              <h3>Clásico: ${clasico.Personaje} (${clasico.Ano})</h3>
+              <p>${clasico.Argumento}</p>
+            </div>
+          `;
+          contenedor.appendChild(div);
+        }
       });
     }
+
+
 
     datosMet().catch(error => console.error("Error al cargar datos Met Gala:", error));
   </script>
