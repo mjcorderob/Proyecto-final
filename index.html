@@ -21,12 +21,16 @@
     <section>
       <div class="timeline-text">
     <h2>Línea de tiempo: Looks icónicos</h2>
-    <p>Desde siluetas clásicas hasta disfraces dramáticos, esta línea de tiempo destaca los looks más memorables de la Met Gala entre 2013 y 2023.</p>
+    <p>Desde siluetas clásicas hasta disfraces dramáticos, esta línea de tiempo destaca los looks más memorables de la Met Gala a lo largo de los años.</p>
   </div>
       <div class="timeline"></div>
     </section>
 
     <section>
+      <div class="moodboard-section"></div>
+        <div class="moodboard-image">
+        <img src="images/moodboard-metgala.png" alt="Moodboard colores Met Gala">
+      </div>
        <div class="Nube-text">
       <h2>Nube de colores por año + mosaico general</h2>
       <p>Visualización de los colores más utilizados por los asistentes cada año, extraídos a partir de imágenes de los looks más representativos.</p>
@@ -65,21 +69,12 @@
     <section>
       <div class="versus-dinamico"></div>
     </section>
+    <section class="ranking-disenadores">
+    
+    <h2>Ranking de Diseñadores más destacados de la alfombra roja</h2>
+    <div class="ranking-grid"></div>
 
-    <section>
-      <h2>Ranking de Diseñadores más destacados</h2>
-      <table class="designer-ranking">
-        <thead>
-          <tr>
-            <th>Puesto</th>
-            <th>Diseñador</th>
-            <th>Recuento de apariciones</th>
-            <th>Celebrities (ejemplos)</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </section>
+  </section>
   </main>
 
   <footer>
@@ -142,22 +137,6 @@
       });
     }
 
-    function rankingDisenadores(lista) {
-      const cuerpo = document.querySelector(".designer-ranking tbody");
-      cuerpo.innerHTML = "";
-      lista.forEach(d => {
-        const icono = d.Puesto === 1 ? "🥇" : d.Puesto === 2 ? "🥈" : d.Puesto === 3 ? "🥉" : d.Puesto;
-        cuerpo.innerHTML += `
-          <tr>
-            <td>${icono}</td>
-            <td>${d.Disenador}</td>
-            <td>${d["Recuento de apariciones"]}</td>
-            <td>${d["Celebridades (ejemplos)"]}</td>
-          </tr>
-        `;
-      });
-    }
-
     function looksVersus(lista) {
       const contenedor = document.querySelector(".versus-dinamico");
       contenedor.innerHTML = "";
@@ -203,6 +182,58 @@
         }
       });
     }
+    function rankingDisenadores(lista) {
+  const grid = document.querySelector(".ranking-grid");
+  grid.innerHTML = "";
+
+  lista.forEach(d => {
+    const puesto = d.Puesto;
+    const medalla = puesto === 1 ? "🥇" : puesto === 2 ? "🥈" : puesto === 3 ? "🥉" : `#${puesto}`;
+    const nombre = d.Disenador;
+    const apariciones = d["Recuento de apariciones"];
+    const celebridades = d["Celebridades (ejemplos)"];
+
+    const imagenDisenador = `images/designers/${nombre.replace(/\s+/g, '').toLowerCase()}.jpg`;
+    const celebris = celebridades.split(",").map(c => c.trim());
+    const imagenes = celebris.map(c => {
+      const archivo = `images/designs/${c.replace(/\s+/g, '').toLowerCase()}-${nombre.replace(/\s+/g, '').toLowerCase()}.png`;
+      return `<div class="look-slide"><img src="${archivo}" alt="${c}" title="${c}"><span>${c}</span></div>`;
+    }).join("");
+
+    const tarjeta = document.createElement("div");
+    tarjeta.classList.add("designer-card");
+
+    tarjeta.innerHTML = `
+      <div class="designer-info">
+        <img src="${imagenDisenador}" alt="${nombre}" class="designer-photo">
+        <div class="designer-text">
+          <h3>${medalla} ${nombre}</h3>
+          <p><strong>Apariciones:</strong> ${apariciones}</p>
+        </div>
+      </div>
+     <div class="design-gallery">
+      ${imagenes}
+    </div>
+    `;
+
+    grid.appendChild(tarjeta);
+  });
+}
+
+    document.addEventListener("click", function(e) {
+    const card = e.target.closest(".designer-card");
+
+    if (!card) {
+      document.querySelectorAll(".designer-card.expanded").forEach(c => c.classList.remove("expanded"));
+      return;
+    }
+
+    document.querySelectorAll(".designer-card").forEach(c => {
+      if (c !== card) c.classList.remove("expanded");
+    });
+
+    card.classList.toggle("expanded");
+  });
 
 
 
